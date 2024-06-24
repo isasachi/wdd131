@@ -50,10 +50,6 @@
         display: flex;
         align-items: stretch;
     }
-
-    nav ul li:hover {
-        background-color: #2e0d57;
-    }
     
     nav ul li a {
         width: auto;
@@ -61,6 +57,10 @@
         text-decoration: none;
         padding: 0 1.5rem;
         align-self: center;
+    }
+
+    nav ul li a:hover {
+        background-color: #2e0d57;
     }
     
     main {
