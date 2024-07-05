@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Isaac Salirrosas' place website for WDD 131 - Dynamic Web Fundamentals class">
+    <meta name="author" content="Isaac Salirrosas">
+    <title>Place</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/place.css">
+    <script src="./scripts/place.js" defer></script>
+    <script src="./scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="heading-container">
+            <h1>Peru</h1>
+        </div>
+        <picture>
+            <source srcset="./images/machu-picchu-desktop.webp" media="(min-width: 850px)">
+            <img src="./images/machu-picchu-mobile.webp" alt="Machu Picchu Landscape">
+        </picture>
+        <div class="header-data-weather">
+            <div class="data-container">
+                <h2>Data</h2>
+                <div>
+                    <p><span class="label-title">Area: </span>1,285,216 sq km</p>
+                    <p><span class="label-title">Population: </span>34,352,720</p>
+                    <p><span class="label-title">Capital: </span>Lima</p>
+                    <p><span class="label-title">Langauges: </span>Spanish, Quechua, Aymara</p>
+                    <p><span class="label-title">Currency: </span>Peruvian New Sol</p>
+                    <p><span class="label-title">Time Zone: </span>UTC-5</p>
+                    <p><span class="label-title">Calling Code: </span>+51</p>
+                    <p><span class="label-title">Internet TLD: </span>.pe</p>
+                </div>
+            </div>
+            <div class="weather-container">
+                <h2>Weather <span class="weather-icon">⛅</span></h2>
+                <div>
+                    <p><span class="label-title">Temperature: </span>18 °C</p>
+                    <p><span class="label-title">Conditions: </span>Cloudy</p>
+                    <p><span class="label-title">Wind: </span>13km/h</p>
+                    <p><span class="label-title">Wind Chill:</span><span id="wind-chill-header"></span></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h2>Data</h2>
+            <p><span class="label-title">Area: </span>1,285,216 sq km</p>
+            <p><span class="label-title">Population: </span>34,352,720</p>
+            <p><span class="label-title">Capital: </span>Lima</p>
+            <p><span class="label-title">Langauges: </span>Spanish, Quechua, Aymara</p>
+            <p><span class="label-title">Currency: </span>Peruvian New Sol</p>
+            <p><span class="label-title">Time Zone: </span>UTC-5</p>
+            <p><span class="label-title">Calling Code: </span>+51</p>
+            <p><span class="label-title">Internet TLD: </span>.pe</p>
+        </div>
+        <div>
+            <h2>Weather</h2>
+            <img class="weather-svg" src="./images/clouds.svg" alt="Weather Logo" width="96" height="96">
+            <p><span class="label-title">Temperature: </span>18 °C</p>
+            <p><span class="label-title">Conditions: </span>Cloudy</p>
+            <p><span class="label-title">Wind: </span>13km/h</p>
+            <p><span class="label-title">Wind Chill:</span><span id="wind-chill-main"></span></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Isaac Salirrosas Peru</p>
+        <span id="lastModified"></span>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* Mobile */
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #333;
+    --accent-color: #C21010;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header .heading-container {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+header .heading-container h1 {
+    margin: 0;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+
+header picture img {
+    width: 100%;
+    border-top: 10px solid var(--secondary-color);
+    border-bottom: 10px solid var(--accent-color);
+}
+
+header .header-data-weather {
+    display: none;
+}
+
+main {
+    margin: 20px 0;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.label-title {
+    font-weight: bold;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div p {
+    margin: 5px 0;
+    padding: 0;
+}
+
+main div .weather-svg {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+@media screen and (min-width: 850px) {
+    
+    header .heading-container h1 {
+        padding: 1.5rem 0;
+        font-size: 3rem;
+    }
+
+    header {
+        position: relative;
+    }
+
+    header .header-data-weather {
+        display: block;
+    }
+
+    header .data-container {
+        position: absolute;
+        top: 150px;
+        left: 50px;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    header .data-container div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    header .weather-container {
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    header .weather-container div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+    }
+
+    header .data-container h2, header .weather-container h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        background-color: var(--accent-color);
+        color: var(--primary-color);
+    }
+
+    header .data-container div p, header .weather-container div p {
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    main {
+        display: none;
+    }
+
+}
