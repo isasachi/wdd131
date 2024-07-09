@@ -17,7 +17,7 @@ header {
     padding: 1em;
 }
 
-.heading {
+.heading-container {
     display: flex;
     justify-content: space-between;
     align-items: center;

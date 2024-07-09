@@ -133,33 +133,38 @@ const newNavButton = document.getElementById('new')
 const largeNavButton = document.getElementById('large')
 const smallNavButton = document.getElementById('small')
 
+const heading = document.querySelector('.heading');
 
-
-homeNavButton.addEventListener('click', function() {
+homeNavButton.addEventListener('click', function(e) {
     templeCardsContainer.innerHTML = ''
+    heading.innerHTML = e.target.innerHTML
     renderTempleCards(temples)
 })
 
-oldNavButton.addEventListener('click', function() {
+oldNavButton.addEventListener('click', function(e) {
     templeCardsContainer.innerHTML = ''
+    heading.innerHTML = e.target.innerHTML
     const filteredTemples = temples.filter(temple => temple.dedicated.substring(0, 4) < 1900)
     renderTempleCards(filteredTemples)
 });
 
-newNavButton.addEventListener('click', function() {
+newNavButton.addEventListener('click', function(e) {
     templeCardsContainer.innerHTML = ''
+    heading.innerHTML = e.target.innerHTML
     const filteredTemples = temples.filter(temple => temple.dedicated.substring(0, 4) > 2000)  
     renderTempleCards(filteredTemples)
 });
 
-largeNavButton.addEventListener('click', function() {
+largeNavButton.addEventListener('click', function(e) {
     templeCardsContainer.innerHTML = ''
+    heading.innerHTML = e.target.innerHTML
     const filteredTemples = temples.filter(temple => temple.area > 90000)  
     renderTempleCards(filteredTemples)
 });
 
-smallNavButton.addEventListener('click', function() {
+smallNavButton.addEventListener('click', function(e) {
     templeCardsContainer.innerHTML = ''
+    heading.innerHTML = e.target.innerHTML
     const filteredTemples = temples.filter(temple => temple.area < 10000)  
     renderTempleCards(filteredTemples)
 });
