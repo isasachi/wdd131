@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Isaac Salirrosas">
+    <meta name="description" content="This is the TechLab website, a class final project for WDD 131 by Isaac Salirrosas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/getYear.js" defer></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+           <h3>TechLab</h3>
+           <span class="nav-icon">&#9776;</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./catalog.html">Catalog</a></li>
+                <li><a href="./form.html">Review</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-section">
+            <picture>
+                <source srcset="../images/laptop-desktop.webp" media="(min-width:850px)">
+                <img src="../images/laptop-mobile.webp" alt="Laptop Banner">
+            </picture>
+            <div class="heading-container">
+                <h1>UNLEASH YOUR POWER</h1>
+            </div>
+        </div>
+        <div class="featured-laptops-heading">
+            <h3>Featured laptops</h3>
+        </div>
+        <div class="featured-laptops">
+            
+        </div>
+        <div class="reviews">
+            <h3>Reviews</h3>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div>
+                        <p>Marcos Avalos</p>
+                        <span>Asus - ROG Zephyrus G14</span>
+                    </div>
+                    <div>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>                                                                        
+                        <i class="material-icons">star</i>                                                                        
+                        <i class="material-icons">star</i>
+                    </div>
+                    <p>This is a very powerful laptop. I highly recommend it for long gaming sessions.</p>
+                </div>
+                <div class="review-card">
+                    <div>
+                        <p>John Leslie</p>
+                        <span>MSI - Katana 15</span>
+                    </div>
+                    <div>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>                                                                        
+                        <i class="material-icons">star</i>                                                                        
+                        <i class="material-icons">star</i>
+                    </div>
+                    <p>This is a very powerful laptop. I highly recommend it for long gaming sessions.</p>
+                </div>
+                <div class="review-card">
+                    <div>
+                        <p>Richard Packard</p>
+                        <span>Asus - ROG Strix G16</span>
+                    </div>
+                    <div>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>                                                                        
+                        <i class="material-icons">star</i>                                                                        
+                        <i class="material-icons">star</i>
+                    </div>
+                    <p>This is a very powerful laptop. I highly recommend it for long gaming sessions.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> TechLab All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
