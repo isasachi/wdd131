@@ -139,6 +139,10 @@ main .hero-section picture {
     margin-top: 0.5rem;
 }
 
+.review-title {
+    text-align: center;
+}
+
 .review-forward {
     height: 100vh;
 }
